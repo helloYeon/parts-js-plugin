@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<title>4s.plugin.modal.jQuery.js</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="../common/style.css" />
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+		<script src="jQuery.mmmmodal.js" crossorigin="anonymous"></script>
+
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			@media screen and (max-width: 414px) {
+				.content {
+					width: 96%;
+				}
+				/*　画面サイズが1024pxからはここを読み込む　*/
+			}
+		</style>
+	</head>
+
+	<body>
+		<header></header>
+		<section class="content">
+			<h3>4s.plugin.modal.jQuery.js</h3>
+			<article>
+				<h3>sample1</h3>
+				<header>sample1</header>
+				<p>
+					<button id="modal01">open modal</button>
+				</p>
+			</article>
+			<article>
+				<header></header>
+				<p></p>
+				<article></article>
+				<header></header>
+				<p></p>
+			</article>
+		</section>
+		<script>
+			$(function () {
+				// 		var defaultopt = {
+				// 	btn_id: "nsc_accordion_btn",
+				// 	close_btn: false,
+				// 	duration: 500,
+				// 	transition: "linear",
+				// 	no_scroll_back: true,
+				// https://on-ze.com/archives/6971
+
+				// };
+				$("#modal01").zig_modal();
+			});
+		</script>
+	</body>
+</html>
