@@ -2,7 +2,7 @@
 
 ## Setup
 
-- [Download ZIP](http://google.com)
+- [Download ZIP](https://github.com/yeon444/parts-js-plugin/archive/master.zip)
 
 ## Configuration
 
