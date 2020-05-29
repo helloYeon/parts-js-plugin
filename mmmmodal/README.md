@@ -46,5 +46,4 @@ $(".mmmmodal-sample2").mmmmodal({
 
 ## License
 
----
 MIT license.
