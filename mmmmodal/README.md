@@ -17,7 +17,7 @@ $(".mmmmodal-sample2").mmmmodal({
 });
 ```
 
-**1.2 Configuration Options**
+#### 1.2 Configuration Options
 
  | key               | type    | default   | values               | notes             |
  | :---------------- | :------ | :-------- | :------------------- | :---------------- |
