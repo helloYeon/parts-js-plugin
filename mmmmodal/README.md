@@ -6,7 +6,7 @@
 
 ## Configuration
 
-### 1.1 Practical Example
+**1.1 Practical Example**
 
 ```js
 $(".mmmmodal-sample2").mmmmodal({
@@ -17,7 +17,7 @@ $(".mmmmodal-sample2").mmmmodal({
 });
 ```
 
-### 1.2 Configuration Options
+**1.2 Configuration Options**
 
  | key               | type    | default   | values               | notes             |
  | :---------------- | :------ | :-------- | :------------------- | :---------------- |
