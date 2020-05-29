@@ -6,7 +6,7 @@
 
 ## Configuration
 
-**1.1 Practical Example**
+#### 1.1 Practical Example
 
 ```js
 $(".mmmmodal-sample2").mmmmodal({
