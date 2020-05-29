@@ -11,11 +11,48 @@
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<style>
-			@media screen and (max-width: 414px) {
-				.content {
-					width: 96%;
-				}
-				/*　画面サイズが1024pxからはここを読み込む　*/
+			#content1,
+			#content2 {
+				background-color: #fff;
+				color: #666;
+				width: 96%;
+				margin: 0 auto;
+				max-width: 1025px;
+				top: 50%;
+				position: relative;
+				transform: translateY(-50%);
+			}
+
+			.close-btn {
+				width: 44px;
+				height: 44px;
+				position: absolute;
+				top: 1.2rem;
+				right: 1.2rem;
+				cursor: pointer;
+			}
+			.close-btn::before,
+			.close-btn::after {
+				background-color: #fff;
+				height: 0.3rem;
+				content: "";
+				display: block;
+				top: 50%;
+				position: absolute;
+				width: 76%;
+				transition: background-color 0.2s linear;
+				margin: 0 auto;
+				left: 50%;
+			}
+			.close-btn::before {
+				transform: translate(-50%, -50%) rotate(-45deg);
+			}
+			.close-btn::after {
+				transform: translate(-50%, -50%) rotate(+45deg);
+			}
+			.close-btn:hover::before,
+			.close-btn:hover::after {
+				background-color: #ea7542;
 			}
 		</style>
 	</head>
@@ -23,34 +60,66 @@
 	<body>
 		<header></header>
 		<section class="content">
-			<h3>4s.plugin.modal.jQuery.js</h3>
+			<h2>jQuery.mmmmodal.js</h2>
+
+			<!-- sample1 -->
 			<article>
-				<h3>sample1</h3>
-				<header>sample1</header>
-				<p>
-					<button id="modal01">open modal</button>
-				</p>
+				<h4>Sample1 Inline Type</h4>
+				<pre><strong>HTML</strong>
+
+&lt;a href=&quot;#content1&quot; class=&quot;mmmmodal-sample1&quot;&gt;open modal&lt;/a&gt;
+&lt;div id=&quot;content1&quot;&gt;
+	Content1
+&lt;/div&gt;
+
+</pre>
+				<pre><strong>JS</strong>
+$(&quot;.mmmmodal-sample1&quot;).mmmmodal({});
+</pre>
+				<div>
+					<a href="#content1" class="mmmmodal-sample1">open modal</a>
+					<div id="content1">
+						<p>Content1</p>
+						<p>Content1</p>
+					</div>
+				</div>
 			</article>
+
+			<!-- sample2 -->
 			<article>
-				<header></header>
-				<p></p>
-				<article></article>
-				<header></header>
-				<p></p>
+				<h4>Sample2 Youtube Modal</h4>
+				<pre><strong>HTML</strong>
+&lt;a href=&quot;#content2&quot; class=&quot;mmmmodal-sample2&quot;&gt;open modal&lt;/a&gt;
+&lt;div id=&quot;content2&quot;&gt;
+	&lt;a href=&quot;https://www.youtube.com/embed/rWz6RsJDr4A?enablejsapi=1&amp;mute=1&quot;&gt;&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+				<pre><strong>JS</strong>
+$(&quot;.mmmmodal-sample2&quot;).mmmmodal({
+	type: &quot;movie&quot;,
+	overlay_opacity: &quot;0.5&quot;,
+	background: &quot;#162CBD&quot;,
+	background_scroll: false,
+});
+</pre>
+				<div>
+					<a href="#content2" class="mmmmodal-sample2">open modal</a>
+					<div id="content2">
+						<a href="https://www.youtube.com/embed/rWz6RsJDr4A?enablejsapi=1&mute=1"></a>
+					</div>
+				</div>
 			</article>
 		</section>
 		<script>
 			$(function () {
-				// 		var defaultopt = {
-				// 	btn_id: "nsc_accordion_btn",
-				// 	close_btn: false,
-				// 	duration: 500,
-				// 	transition: "linear",
-				// 	no_scroll_back: true,
-				// https://on-ze.com/archives/6971
+				$(".mmmmodal-sample1").mmmmodal({});
 
-				// };
-				$("#modal01").zig_modal();
+				$(".mmmmodal-sample2").mmmmodal({
+					type: "movie",
+					overlay_opacity: "0.5",
+					background: "#162CBD",
+					background_scroll: false,
+				});
 			});
 		</script>
 	</body>
