@@ -1,5 +1,7 @@
 # MMMModal
 
+Requires jQuery 2.xx or higher.
+
 ## Setup
 
 - [Download ZIP](https://github.com/yeon444/parts-js-plugin/archive/master.zip)
