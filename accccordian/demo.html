@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<title>4s.plugin.modal.jQuery.js</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="../common/style.css" />
+		<script src="accccordion.js" crossorigin="anonymous"></script>
+
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			.accordion_content {
+				line-height: 0;
+				opacity: 0;
+				transition: all 0.2s ease-out;
+			}
+
+			.accordion_content.open {
+				line-height: 1.25;
+				opacity: 1;
+			}
+		</style>
+	</head>
+
+	<body>
+		<header></header>
+		<section class="content">
+			<h2>accordian.js</h2>
+
+			<article class="sample">
+				<h3>sample1</h3>
+				<a href="#a_q1" data-parent="#accccordion1">title1</a>
+				<p id="a_q1" class="accordion_content">content1<br />content1</p>
+
+				<a href="#a_q2" data-parent="#accccordion1">title2</a>
+				<p id="a_q2" class="accordion_content">content2<br />content</p>
+
+				<a href="#a_q3" data-parent="#accccordion1">title3</a>
+				<p id="a_q3" class="accordion_content">content3<br />content</p>
+
+				<a href="#a_q4" data-parent="#accccordion1">title4</a>
+				<p id="a_q4" class="accordion_content">
+					content<br />content content<br />content content<br />content content<br />content content<br />content
+					content<br />content content<br />content content<br />content content<br />content content<br />content
+				</p>
+			</article>
+		</section>
+
+		<script>
+			accccordion("#accccordion1");
+		</script>
+	</body>
+</html>

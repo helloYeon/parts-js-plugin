@@ -1,2 +1,59 @@
-jsplugins
-aaa
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<title>sandbox</title>
+		<style>
+			.bg1 {
+				background-color: aquamarine;
+			}
+			.bg2 {
+				background-color: forestgreen;
+			}
+			.bg3 {
+				background-color: chocolate;
+			}
+			.bg4 {
+				background-color: brown;
+			}
+			.wrap {
+				display: flex;
+				background-color: yellow;
+
+				flex-wrap: nowrap;
+				flex-wrap: wrap-reverse;
+				flex-wrap: wrap;
+				width: 400px;
+				/* align-items: flex-start;
+				flex-wrap: nowrap; */
+				height: 100%;
+				justify-content: space-evenly;
+			}
+			.item1 {
+				/* flex-grow: 1; */
+				/* width: 40%; */
+			}
+			.item2 {
+				/* flex-grow: 1; */
+				/* width: 40%; */
+			}
+			.item3 {
+				/* flex-grow: 1; */
+				/* width: 40%; */
+			}
+			.item4 {
+				/* flex-grow: 1; */
+				/* width: 60%; */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<!-- <h2>test</h2> -->
+
+			<div class="bg1 item1">AAAAAAAAAA</div>
+			<div class="bg2 item2">BBBBBBBBBB</div>
+			<div class="bg3 item3">CCCCCCCCCCCC</div>
+			<div class="bg4 item4">DDDDDDDDDD</div>
+		</div>
+	</body>
+</html>
