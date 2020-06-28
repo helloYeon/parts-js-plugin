@@ -13,6 +13,8 @@ var Inputcounterrrr = function (wrap, option) {
 			target: "textarea",
 			onOverLengthClass: "is-error",
 			lenthStatusClass: "cha-cnt",
+			onError: function () {},
+			onValid: function () {},
 		},
 		option || {}
 	);
@@ -57,6 +59,7 @@ Inputcounterrrr.handleKeyDown = (e) => {
 Inputcounterrrr.setError = (e) => {
 	this.lengthStatus.classList.add(this.option.onOverLengthClass);
 	e.target.classList.add(this.option.onOverLengthClass);
+	this.option.onError();
 };
 
 Inputcounterrrr.removeError = (e) => {
