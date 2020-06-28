@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<title>4s.plugin.modal.jQuery.js</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0" />
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="../common/style.css" />
+		<script src="inputcounterrrr.js" crossorigin="anonymous"></script>
+
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			div.is-error {
+				color: red;
+				/* animation: blink 1600ms forwards; */
+				animation: blink 0.8s ease-in-out infinite alternate;
+			}
+
+			textarea.is-error {
+				border: 1px solid red;
+			}
+			@keyframes blink {
+				0% {
+					opacity: 0;
+				}
+				50% {
+					opacity: 0.5;
+				}
+				100% {
+					opacity: 1;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<header></header>
+		<section class="content">
+			<h2>Inputcounterrrr.js</h2>
+
+			<article class="sample">
+				<h3>sample1</h3>
+
+				<div id="inputcounterrrr">
+					<div class="cha-cnt"></div>
+					<textarea placeholder="sample1"> </textarea>
+				</div>
+			</article>
+		</section>
+		<div class="" id="start-button">
+			TTTTTTTT
+		</div>
+
+		<script>
+			Inputcounterrrr("inputcounterrrr", {
+				target: "textarea",
+				onOverLengthClass: "is-error",
+				lenthStatusClass: "cha-cnt",
+			});
+		</script>
+	</body>
+</html>
